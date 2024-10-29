@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>08-10</title>
+  </head>
+  <body>
+    <h1>Testes com forms</h1>
+    <form action="receptor.php" method="post" enctype="multipart/form-data">
+      <label for="nome">Nome</label>
+      <input id="nome" type="text" name="nome" placeholder="Digite o seu nome"/>
+      <br />
+      <label for="senha">Senha</label>
+      <input type="password" name="senha" id="senha" placeholder="Digite sua senha" />
+      <br />
+      <label for="aceite">Aceito os termos</label>
+      <input type="checkbox" name="aceite" id="aceite" />
+      <br />
+      <label for="fem">Feminino</label>
+      <input type="radio" name="sexo" id="fem" value="F" />
+      <label for="masc">Masculino</label>
+      <input type="radio" name="sexo" id="masc" value="M" />
+      <br />
+      <label for="curriculo">Currículo</label>
+      <br />
+      <input type="file" name="curriculo" id="curriculo" />
+      <br />
+      <!-- <input type="reset" value="Limpar">  -->
+      <button type="reset">Limpar</button>
+      <br />
+      <label for="cor">Cor preferida</label>
+      <input type="color" name="cor" id="cor" />
+      <br>
+      <label for="nascimento">Data de nascimento</label>
+      <input type="date" name="nascimento" id="nascimento">
+      <br />
+      <label for="mes">Mes</label>
+      <input type="month" name="mes" id="mes" />
+      <br />
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Digite seu e-mail"/>
+      <br>
+      <label for="idade">Idade</label>
+      <input type="number" name="idade" id="idade" placeholder="Digite sua idade">
+      <br>
+      <label for="potencia">Potência</label>
+      <input type="range" name="potencia" id="potencia">
+      <br>
+      <label for="site">Site</label>
+      <input type="url" name="site" id="site" placeholder="Deixe o link de seu site">
+      <br />
+      <label for="cpf">CPF</label>
+      <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+      <br>
+      <button>Enviar</button>
+    </form>
+  </body>
+</html>
