@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 200vh;
+}
+
+
+h1 {
+    color: #000;
+    background-color: red;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
+    text-shadow: 1px 1px 1px white;
+}
+/* 
+p {
+    margin-top: 8px;
+    color: rgb(78, 78, 247);
+    background-color: #eee;
+    letter-spacing: 1px;
+    text-align: justify;
+    text-decoration: underline black;
+} */
+
+#stick {
+    position: sticky;
+    top: 0px;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+    text-shadow: 1px 1px 1px white;
+}
+
+#primeira-div {
+    width: 100%;
+    height: 95vh;
+    border: .5px solid gray;
+    background-image: url('../img/gabigol-balancou-as-redes-em-flamengo-x-atletico-mg-duelo-da-final-da-copa-do-brasil-1730664326776_v2_450x450.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: 1cm;
+    background-color: #eee;
+}
+
+button {
+    display: block;
+    /* display: none; */
+}
+
+.div-d {
+    display: inline-block;
+    background-color: #000;
+    color: aliceblue;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 8px;
+}
+
+#bnt3 {
+    position: fixed;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    bottom: 50px;
+    right: 30px;
+    transition: 0.2s;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.527);
+}
+
+#bnt3:hover{
+    cursor: pointer;
+    background-color: #eee;
+    color: black;
+}
+
+.div-card {
+    background-color: aliceblue;
+}
+
+.div-card-tit {
+    background-color: chocolate;
+    padding: 8px;
+}
+
+.div-card-corpo {
+    background-color: chartreuse;
+    padding: 5px;
+    position: relative;
+    top: -20px;
+    border-radius: 20px 20px 0 0;
+}
