@@ -9,7 +9,9 @@
 }
 
 body {
-    background-color: #360745;
+    background-image: url('../img/197049e9-e445-46d4-bf9a-d75f3c90863b.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #main {
