@@ -42,15 +42,15 @@ input[type="checkbox"] + div{
     width: 150px;
 }
 
-a {
-    display: block;
-    color: azure;
-}
-
 input[type="checkbox"]:checked + div{
     display: block;
 }
 
 input[type="checkbox"] {
     display: none;
+}
+
+a {
+    display: block;
+    color: azure;
 }
