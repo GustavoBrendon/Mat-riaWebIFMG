@@ -31,7 +31,6 @@ ul li {
     text-align: center;
     transition: .5s ease;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.527);
-    border-radius: ;
 }
 
 ul li:hover {
@@ -52,7 +51,6 @@ input[type="checkbox"] + ul{
     width: 150px;
     border: 1px solid black;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.555);
-    border-radius: ;
 }
 
 input[type="checkbox"]:checked + ul{
@@ -67,7 +65,7 @@ input[type="checkbox"] {
 #section {
     width: 100%;
     height: 50vh;
-    background-color: blue;x
+    background-color: blue;
 }
 
 #main {
