@@ -3,34 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Atividade 19-11</title>
+    <title>Sistemas de Informação</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <header id="header">
-            <nav>
-                <label for="ipt_01">&#9776</label> 
-                <input type="checkbox" id="ipt_01">
-                <ul>
-                    <a href="#section"><li>Section</li></a>
-                    <a href="#main"><li>Main</li></a>
-                    <a href="#footer"><li>Footer</li></a>
-                </ul>
-            </nav>
-          <h1>IFMG SJE</h1>
-        </header>
 
-        <section id="section">
-            <h2>Section</h2>
-        </section>
+    <header class="header">
+        <img src="logo.jpg" alt="Logo do IFMG Campus São João
+        Evangelista">
+        <h1>IFMG - Campus São João Evangelista</h1>
+        <label for="ipt_01">&#9776</label> 
+        <input type="checkbox" id="ipt_01">
+        <nav id="nav">
+            <ul>
+                <li><a href="./index2.html" target="_blank"><button>Engenharia Florestal</button></a></li>
+                <li><a href="./index3.html" target="_blank"><button>Agronomia</button></a></li>
+                <li><a href="#section"><button>Sistemas de Informação</button></a></li>
+                <li><a href="#footer"><button>Final da Página</button></a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <main id="main">
-            <h2>Main</h2>
-        </main>
+    <section id="section">
+       <h2>Sistemas de informação</h2>
+       <p>Conheça o nosso curso.</p>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/jlXC-dTCS7w?si=omvHjdPRiPz1EGh2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       <details>
+            <summary>
+            Saiba mais    
+            </summary>
+            <p id="p-details">O Curso de Sistemas de Informação tem por objetivo formar um bacharel capaz de compreender, desenvolver, utilizar e adaptar tecnologias da informação, atuando de maneira ética, social e humana. Ele irá assegurar às organizações as informações e os sistemas necessários para prover suporte às operações e obter vantagem competitiva. Estará ainda apto a inovar, planejar e gerenciar a infraestrutura de tecnologia da informação em organizações, bem como desenvolver e evoluir sistemas de informação para uso em processos organizacionais, departamentais e/ou individuais. O bacharel em Sistemas de Informação está capacitado para atuar no mercado em todas as fases de desenvolvimento de sistemas e como gestor dos recursos computacionais. São exemplos de cargos exercidos: analista de sistemas, gerente de projetos de sistemas de informação, analista de suporte, gerente de tecnologia da informação, administrador de banco de dados, administrador de redes, analista de segurança, arquiteto de softwares, engenheiro de software. Pode atuar ainda em pesquisas na área da Computação, tais como: banco de dados, engenharia de software, computação móvel e distribuída, gestão de conteúdos, informática na educação, inteligência artificial, gestão de tecnologia da informação e inovação em TI.</p>
+            <fieldset>
+                <legend>Observações</legend>
+                <p id="p-fieldset">As inscrições são até o dia 10 de março em todo ano. Fique atento com as datas!</p>
+            </fieldset>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Carga Horária</td>
+                        <td>Horas</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>diurno</td>
+                        <th>40</th>
+                    </tr>
+                    <tr>
+                        <td>Noturno</td>
+                        <th>45</th>
+                    </tr>
+                    <tr>
+                        <td>Tarde</td>
+                        <th>50</th>
+                    </tr>
+                </tbody>
+            </table>
+       </details>
+    </section>
 
-
-        <footer id="footer">
-            <h2>Footer</h2>
-        </footer>
+    <footer id="footer">
+        <p>Direitos Reservados - IFMGSJE &copy;</p>
+    </footer>
+    
 </body>
 </html>
