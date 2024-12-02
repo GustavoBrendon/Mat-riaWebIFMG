@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+$w: 100px;
 
 //Função
 @mixin alerta($cor_borda: blue,$cor_texto: #000,$cor_fundo: #eee){
@@ -38,18 +39,18 @@ main {
         margin: 10px;
         text-align: left;
     }
-    button {
-        padding: 16px;
-        border-radius: 8px;
-        box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.568);
-        margin: 8px;
-    }
-    button:hover{
-        cursor: pointer;
-        background-color: #000;
-        color: white;
-        transition: .5s;
-    }
+    // button {
+    //     padding: 16px;
+    //     border-radius: 8px;
+    //     box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.568);
+    //     margin: 8px;
+    // }
+    // button:hover{
+    //     cursor: pointer;
+    //     background-color: #000;
+    //     color: white;
+    //     transition: .5s;
+    // }
 }
 
 
@@ -61,4 +62,32 @@ p {
 // Específico
 .alerta-info {
     @include alerta(red,#eee,#000);
+}
+
+%botao {
+    padding: 10px;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+button {
+    @extend %botao;
+    width: ($w / 2) ;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.botao-confirmar {
+    @extend %botao;
+    background-color: #000;
+    color: #eee;
+}
+
+.botao-deletar {
+    @extend %botao;
+    background-color: blue;
+    color: aliceblue;
 }
