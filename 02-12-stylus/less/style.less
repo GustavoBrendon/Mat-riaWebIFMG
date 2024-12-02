@@ -1,0 +1,47 @@
+@main-color: #006;
+
+body {
+    background-color: @main-color;
+}
+
+.padding(@x, @y) {
+    padding: @y @x;
+  }
+  
+.msg {
+    .padding(5px, 10px);
+  }
+
+.funcao(@cor_borda: blue,@cor_texto: #000,@cor_fundo: #eee){
+    border: 1px solid @cor_borda;
+    color: @cor_texto;
+    background-color: @cor_fundo;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+header {
+    color: white;
+    h3 {
+        text-align: center;
+    }
+}
+
+p {
+    .funcao;
+    margin: 32px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+
+  .primeiro-button {
+    &:extend(button);
+    background-color: #000;
+  }
+  
