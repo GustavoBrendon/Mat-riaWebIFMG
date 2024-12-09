@@ -107,5 +107,7 @@ function testesObjetosComArrays(){
         "Dependentes": ['Joaozinho', 'Caiobinha', 'Tuilinho']
     };
     console.log(pessoa);
-    console.log(pessoa.Dependentes);
+    console.log('Nome: ' + pessoa.nome);
+    console.log('Idade: ' + pessoa.idade);
+    console.log(pessoa.Dependentes);    
 }

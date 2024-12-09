@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 250px auto;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    margin: auto;
+    padding: 8px;
+}
