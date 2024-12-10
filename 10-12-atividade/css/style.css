@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#section1 {
+    display: flex;
+    justify-content: center;
+}
+
+#section1 img {
+    width: 300px;
+}
+
+#section2 {
+    display: flex;
+    justify-content: center;
+}
+
+#section2 img {
+    width: 180px;
+}
