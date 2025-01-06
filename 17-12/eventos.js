@@ -55,17 +55,50 @@ bnt4.addEventListener('click', testeCssTexto);
 function testeCssTexto(){
     const h1 = document.querySelector('header h1');
     const h3 = document.querySelector('footer h3');
-    const table = document.querySelector('table')
-
+    const table = document.querySelector('table');
     h1.innerText = 'Texto Novo';
     h1.style.color = 'red';
     h1.style.textAlign = 'center';
     h1.style.borderBottom = '0.2px solid red'
 
-    h3.className = 'tituloh1    ';
+    h3.className = 'tituloh1';
     console.log(h3.className);
 
     // table.classList.add('table')
      table.classList.toggle('table')
 
 }
+
+
+function testeRemover(event){
+    const texto = event.target.getAttribute('data_texto');
+    if(confirm(`Apagar a nome ${texto}?`)){
+        event.target.parentNode.parentNode.remove();
+    }
+}
+
+
+function testeCriarEncaixar(event){
+    event.preventDefault();
+    const corpoTabela = document.getElementById('corpo_tabela');
+    const iptNome = document.getElementById('nome');
+    const tr = document.createElement('tr');
+    const td1 = document.createElement('td');
+    const td2 = document.createElement('td');
+    const td3 = document.createElement('td');
+    const btEx = document.createElement('button');
+
+    btEx.innerText = 'Excluir';
+    btEx.setAttribute('data_texto', iptNome.value);
+    btEx.addEventListener('click', testeRemover);
+    td1.innerText = '#';
+    td2.innerText = iptNome.value;
+    td3.append(btEx);
+    tr.append(td1,td2,td3);
+    corpoTabela.append(tr);
+    event.target.reset()
+}
+
+
+const form = document.querySelector('form');
+form.addEventListener('submit', testeCriarEncaixar);
