@@ -30,4 +30,4 @@ class Conexao
 
 }
 
-var_dump(Conexao::getConexao());
+// var_dump(Conexao::getConexao());

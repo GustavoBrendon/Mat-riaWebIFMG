@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Cartas</h1>
+    <form>
+      <label for="nome">Nome</label><br />
+      <input type="text" name="nome" id="nome" /><br />
+      <label for="descricao">Descrição</label><br />
+      <input type="text" name="descricao" id="descricao" /><br />
+      <button>Salvar</button>
+    </form>
+    <textarea name="dados"></textarea>
+    <script>
+      async function enviaCartaParaApi(e) {
+        e.preventDefault();
+        const dados = new FormData(e.target);
+        const opt = {
+          method: "post",
+          body: dados,
+        };
+        const res = await fetch("http://localhost/14-01-25/carta/inserir", opt);
+        const json = await res.json();
+        alert(json.status);
+      }
+      document
+        .querySelector("form")
+        .addEventListener("submit", enviaCartaParaApi);
+    </script>
+  </body>
+</html>
