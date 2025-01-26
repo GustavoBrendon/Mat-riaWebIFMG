@@ -1,0 +1,31 @@
+body {
+  background-color: #006;
+}
+.msg {
+  padding: 10px 5px;
+}
+header {
+  color: white;
+}
+header h3 {
+  text-align: center;
+}
+p {
+  border: 1px solid blue;
+  color: #000;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 32px;
+}
+button,
+.primeiro-button {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.primeiro-button {
+  background-color: #000;
+}
